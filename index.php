@@ -25,10 +25,16 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="...">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="assets/image/img-laricia-mobile.png">
+                            <img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="...">
+                        </picture>                        
                     </div>                    
                     <div class="carousel-item">
-                        <img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="...">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="assets/image/douglas-mobie.jpg">
+                            <img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="...">
+                        </picture>                        
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -107,7 +113,7 @@
                 <div class="row">
                     <div class="cards d-flex flex-wrap">
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/limpeza-ecologica.jpg" class="card-img-top" alt="...">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/limpeza-ecologica.jpg" class="card-img-top" alt="Limpeza Ecológica">
                             <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">                                    
                                     <h5 class="card-title">Limpeza Ecológica</h5>
@@ -122,13 +128,13 @@
                                     <p class="card-text">A limpeza ecológica da Acquazero com o composto de cera não prejudica a pintura, protegida contra males do tempo e é biodegradável.</p>                                    
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
-                                    <p class="preco">A partir de <strong>&nbsp;R$70,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <p class="preco">A partir de <strong>&nbsp;R$70,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                                
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/polimento-de-pintura-acquazero-bmw.jpg" class="card-img-top" alt="...">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/polimento-de-pintura-acquazero-bmw.jpg" class="card-img-top" alt="Enceramento Wax">
                             <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Enceramento Wax</h5>
@@ -144,12 +150,12 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$110,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Enceramento%20Wax." class="btn btn-primary">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/revitalizacao.jpg" class="card-img-top" alt="...">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/revitalizacao.jpg" class="card-img-top" alt="Revitalização de plásticos">
                             <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Revitalização de plásticos</h5>
@@ -165,12 +171,12 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$30,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20plásticos." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                               
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/polimento-de-pintura-acquazero.jpg" class="card-img-top" alt="...">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/polimento-de-pintura-acquazero.jpg" class="card-img-top" alt="Polimento de Pintura">
                             <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Polimento de Pintura</h5>
@@ -186,14 +192,14 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$500,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Pintura" class="btn btn-primary">Agendar Serviço</a>
                                 </div> 
                             </div>
                         </div>
                         <!--ESPAÇO-->
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/04/como-limpar-couro-sintetico1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/04/como-limpar-couro-sintetico1.jpg" class="card-img-top" alt="Hidratação de Couro">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Hidratação de Couro</h5>
                                     <div>
@@ -208,13 +214,13 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$40,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Hidratação%20de%20Couro" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                              
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/impermeabilizacao-bancos.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/impermeabilizacao-bancos.jpg" class="card-img-top" alt="Impermeabilização dos Tecidos">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Impermeabilização dos Tecidos</h5>
                                     <div>
@@ -229,13 +235,13 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$200,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Impermeabilização%20dos%20Tecidos" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/10/como-e-feita-a-oxi-sanitizacao-1-edited.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/10/como-e-feita-a-oxi-sanitizacao-1-edited.jpg" class="card-img-top" alt="Oxi-sanitização">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Oxi-sanitização</h5>
                                     <div>
@@ -243,20 +249,19 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    
+                                        <i class="fa fa-star"></i>                                    
                                     </div>
                                     <p class="card-text">A oxi-sanitização é um processo que elimina totalmente odores desagradáveis, como cheiro de cigarro, vômito, derramamento acidental de líquidos e alimentos.</p>                                    
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$200,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Oxi-sanitização" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/porta-malas.jpg.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/porta-malas.jpg.jpg" class="card-img-top" alt="Higienização do Porta Malas">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Higienização do Porta Malas</h5>
                                     <div>
@@ -264,14 +269,13 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    
+                                        <i class="fa fa-star"></i>                                    
                                     </div>
                                     <p class="card-text">Evite que suas malas se sujem, oe que o porta-malas dê mau cheiro. Limpeza completa a seco e que elimina toda a sujeira e bactérias.</p>
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$80,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Porta%20Malas" class="btn btn-primary">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>                        
@@ -286,8 +290,8 @@
                 <div class="row">
                     <div class="cards d-flex flex-wrap pt-5">
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/cadeirao-para-crianca.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/cadeirao-para-crianca.jpg" class="card-img-top" alt="Higienização do Cadeirão">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Higienização do Cadeirão</h5>
                                     <div>
@@ -302,13 +306,13 @@
                                 </div><br> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$180,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Cadeirão" class="btn btn-primary">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/vitrificacao-acquazero-bmw.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/01/vitrificacao-acquazero-bmw.jpg" class="card-img-top" alt="Cristalização de Pintura">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Cristalização de Pintura</h5>
                                     <div>
@@ -323,13 +327,13 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$350,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Cristalização%20de%20Pintura" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/enceramento-espelhamento-acquazero.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/enceramento-espelhamento-acquazero.jpg" class="card-img-top" alt="Espelhamento de Pintura">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Espelhamento de Pintura</h5>
                                     <div>
@@ -344,13 +348,13 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$250,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Espelhamento%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/vitificacao.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/vitificacao.jpg" class="card-img-top" alt="Vitrificação de Pintura">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Vitrificação de Pintura</h5>
                                     <div>
@@ -365,14 +369,14 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$1000,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                       
                             </div>
                         </div>
                         <!--ESPAÇO-->
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2020/09/car-panel-7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2020/09/car-panel-7.jpg" class="card-img-top" alt="Revitalização de Plásticos Internos">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Revitalização de Plásticos Internos</h5>
                                     <div>
@@ -387,13 +391,13 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$60,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20Plásticos%20Internos." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/vitrificacao-acquazero.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/vitrificacao-acquazero.jpg" class="card-img-top" alt="Vitrificação de Vidros">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Vitrificação de Vidros</h5>
                                     <div>
@@ -408,13 +412,13 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$150,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Vidros." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/manutencao-de-pintura-acquazero.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/manutencao-de-pintura-acquazero.jpg" class="card-img-top" alt="Descontaminação de Pintura">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Descontaminação de Pintura</h5>
                                     <div>
@@ -429,13 +433,13 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$250,00</strong></p>
-                                    <a href="#" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Descontaminação%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                           
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/polimento-de-farol.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2022/02/polimento-de-farol.jpg" class="card-img-top" alt="Polimento de Faróis">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Polimento de Faróis</h5>
                                     <div>
@@ -450,7 +454,7 @@
                                 </div><br>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$50,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Faróis" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                        
                             </div>
                         </div>                        
@@ -465,8 +469,8 @@
                 <div class="row">
                     <div class="cards d-flex flex-wrap pt-5">
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/limpeza-tecnica-de-motor.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/limpeza-tecnica-de-motor.jpg" class="card-img-top" alt="Limpeza Técnica de Motor">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Limpeza Técnica de Motor</h5>
                                     <div>
@@ -481,13 +485,13 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$100,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href=https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Técnica%20de%20Motor." class="btn btn-primary">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/higinizacao-interna.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/higinizacao-interna.jpg" class="card-img-top" alt="Higienização Interna">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Higienização Interna</h5>
                                     <div>
@@ -502,13 +506,13 @@
                                 </div><br>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$400,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20Interna." class="btn btn-primary">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/ar-condicionado.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/ar-condicionado.jpg" class="card-img-top" alt="Higienização de Ar Condicionado">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">
                                     <h5 class="card-title">Higienização de Ar Condicionado</h5>
                                     <div>
@@ -523,13 +527,13 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$80,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20de%20Ar%20Condicionado" class="btn btn-primary">Agendar Serviço</a>
                                 </div>                              
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/remocao-chuva-acida.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/remocao-chuva-acida.jpg" class="card-img-top" alt="Remoção de Chuva Ácida">
+                            <div class="card-body d-flex align-content-between flex-wrap">
                                 <div class="card-info">                                
                                     <h5 class="card-title">Remoção de Chuva Ácida</h5>
                                     <div>
@@ -537,14 +541,13 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    
+                                        <i class="fa fa-star"></i>                                    
                                     </div>
                                     <p class="card-text">Chuvas ácidas podem causar uma série de manchas na lataria e nos vidros do veículo. A Acquazero recupera o visual do carro e elimina os danos provocados por esse fenômeno. </p>                                    
                                 </div><br>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$30,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511971163576&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Let%27s%20Work." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Remoção%20de%20Chuva%20Ácida." class="btn btn-primary">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>                                               

@@ -19,6 +19,9 @@ h2{
     font-family: 'Dosis', sans-serif !important;
     color: #273171;
 }
+.card-title{
+    font-weight: 700px;
+}
 .container{
     max-width: 1336px !important;
     margin: auto !important;
@@ -82,7 +85,6 @@ h2{
     background-color: #f80032 !important;
     margin-top: 15px;
     margin-bottom: 15px;
-
 }
 .fa{
     color: #38AAE1;
@@ -116,6 +118,9 @@ h2{
     }
     h2{
         font-size: 45px !important;
+    }
+    .card-text{
+        width: 80vw;
     }
     
 }
