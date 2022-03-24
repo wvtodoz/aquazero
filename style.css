@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+body p{
+    font-family: 'Dosis', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+p{    
+    color: #54595f;
+    font-size: 17px;    
+}
+.preco{
+    font-size: 20px;
+    color: #000;   
+}
+header{
+    background-color: #17174B;        
+}
+h2{
+    font-family: 'Dosis', sans-serif !important;
+    color: #273171;
+}
+.container{
+    max-width: 1336px !important;
+    margin: auto !important;
+}
+.header--area{    
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+    height: 72px;    
+    background-color: #17174B;    
+}
+.header--logo img{
+    width: 198px;
+    height: 52px;
+}
+#tabs{
+    background-color: #17174B;    
+}
+.tabs--area{
+    height: 72px;
+    line-height: 72px;      
+}
+.tabs--area ul{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.icon{
+    height: 54px;
+    width: 60px;
+    color: #38aae1;
+}
+.slick{       
+    margin: 0 auto;
+}
+.slick img{
+    width: 283px;    
+}
+.cards img{
+    width: 100%;
+}
+.card{
+    margin: 20px 20px;
+}
+.card img{
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+}
+.banner img{
+    width: 100%;
+}
+.cards div{
+    width: 250px;
+    border-radius: 22px;
+}
+.card-info {
+    width: 13vw !important;
+}
+.btn-primary{
+    border: none !important;
+    border-radius: 16px !important;
+    background-color: #f80032 !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.fa{
+    color: #38AAE1;
+}
+.fa-star{
+    color: #F0AD4E;
+}
+
+.hm-delivery-van:before{
+    content: \e964;
+}  
+
+@media(max-width: 768px){
+    .cards div{
+        width: 332px !important;
+    }
+    .tabs--area{
+        display: none;
+    }
+
+}
+@media (max-width: 425px){
+    .cards div{
+        width: 367px !important;
+    }
+    .tabs--area{
+        display: none;
+    }
+    .slick img {
+        width: 393px;
+    }
+    h2{
+        font-size: 45px !important;
+    }
+    
+}
+@media (max-width: 320px){
+    .tabs--area ul{
+        padding-left: 0px;
+    }
+    .cards div{
+        width: 257px !important;
+    }
+    .tabs--area{
+        display: none;
+    }
+
+}
