@@ -95,7 +95,8 @@ h2{
 
 .hm-delivery-van:before{
     content: \e964;
-}  
+} 
+
 
 @media(max-width: 768px){
     .cards div{
@@ -104,11 +105,13 @@ h2{
     .tabs--area{
         display: none;
     }
-
+    .card-text {
+        width: 38vw;
+    }
 }
 @media (max-width: 425px){
     .cards div{
-        width: 367px !important;
+        width: 345px !important;
     }
     .tabs--area{
         display: none;
@@ -117,14 +120,34 @@ h2{
         width: 393px;
     }
     h2{
-        font-size: 45px !important;
+        font-size: 30px !important;
     }
     .card-text{
-        width: 80vw;
+        width: 70vw;
+        padding-right: 10px;
+    }
+    
+}
+@media (max-width: 375px){
+    h2{
+        font-size: 35px !important;
+    }    
+    .card-text {
+        width: 75vw;
     }
     
 }
 @media (max-width: 320px){
+    h2{
+        font-size: 30px !important;
+    }  
+    .row{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .card-text{
+        width: 70vw !important;
+    }
     .tabs--area ul{
         padding-left: 0px;
     }
@@ -133,6 +156,16 @@ h2{
     }
     .tabs--area{
         display: none;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-text {
+        width: 75vw;
+    }
+    
+    .slick img{
+        width: 100% !important;
     }
 
 }

@@ -27,13 +27,13 @@
                     <div class="carousel-item active">
                         <picture>
                             <source media="(max-width: 480px)" srcset="assets/image/img-laricia-mobile.png">
-                            <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="..."></a>
+                            <img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="...">
                         </picture>                        
                     </div>                    
                     <div class="carousel-item">
                         <picture>
                             <source media="(max-width: 480px)" srcset="assets/image/douglas-mobie.jpg">
-                            <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="..."></a>
+                            <img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="...">
                         </picture>                        
                     </div>
                 </div>
@@ -69,46 +69,32 @@
                     <li>
                     <span><i class="pt-3 fa fa-certificate fa-flip-horizontal fa-pull-left fa-2x"></i></span>                       
                         <span class="text-white">Nº1 do mundo</span>
-                    </li>
-                   <!-- <li>
-                    <span><i class="fa fa-users fa-3x" aria-hidden="true"></i></i></span>
-                        <span class="text-white">Profissionais qualificados</span>
-                    </li>
-                    <li>
-                    <span><i class="fa fa-calendar fa-3x" aria-hidden="true"></span>                       
-                        <span class="text-white">Serviços agendados</span>
-                    </li>
-                    <li>
-                    <span><i class="fa fa-shield fa-3x" aria-hidden="true"></span>                       
-                        <span class="text-white">100% segura</span>
-                    </li>
-                    <li>
-                    <span><i class="fa fa-certificate fa-3x" aria-hidden="true"></span>                       
-                        <span class="text-white">Nº1 do mundo</span>
-                    </li>  -->                 
+                    </li>                                   
                 </ul>
             </div>                      
         </section>
         <section id="oferta--mes">
             <div class="container oferta--area">
                 <div class="row d-flex justify-content-center pt-3">
-                    <h2 class="d-flex justify-content-center pt-5 pb-5">Ofertas do <strong>&nbsp;Mês</strong></h2>
-                </div>
-                <div class="row">
-                    <div class="slick">
-                        <div><img src="assets/image/of1.jpg" alt="js" /></div>
-                        <div><img src="assets/image/of2.jpg" alt="java" /></div>
-                        <div><img src="assets/image/of3.jpg" alt="java" /></div>
-                        <div><img src="assets/image/of4.jpg" alt="java" /></div>
-                        <div><img src="assets/image/of5.jpg" alt="java" /></div>                        
-                    </div>                   
-                </div>
+                    <div class="container">
+                        <h2 class="d-flex justify-content-center pt-5 pb-5">Ofertas do <strong>&nbsp;Mês</strong></h2>
+                    </div>                    
+                </div>                
+                <div class="slick">
+                    <div><img src="assets/image/of1.jpg" alt="js" /></div>
+                    <div><img src="assets/image/of2.jpg" alt="Oferta 1" /></div>
+                    <div><img src="assets/image/of3.jpg" alt="Oferta 2" /></div>
+                    <div><img src="assets/image/of4.jpg" alt="Oferta 3" /></div>
+                    <div><img src="assets/image/of5.jpg" alt="Oferta 4" /></div>                        
+                </div>              
             </div>
         </section>
         <section id="oferta--mes">
             <div class="container oferta--area">
                 <div class="row d-flex justify-content-center pt-5">
-                    <h2 class="d-flex justify-content-center pb-5">Serviços <strong>&nbsp;Automotivos</strong></h2>
+                    <div class="container"> 
+                        <h2 class="d-flex justify-content-center pb-5">Serviços <strong>&nbsp;Automotivos</strong></h2>
+                    </div>                    
                 </div>
                 <div class="row">
                     <div class="cards d-flex flex-wrap">
@@ -196,7 +182,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <!--ESPAÇO-->
+                        
                         <div class="card" style="width: 18rem;">
                             <img src="https://www.acquazero.com/wp-content/uploads/2021/04/como-limpar-couro-sintetico1.jpg" class="card-img-top" alt="Hidratação de Couro">
                             <div class="card-body d-flex align-content-between flex-wrap">
@@ -373,7 +359,7 @@
                                 </div>                       
                             </div>
                         </div>
-                        <!--ESPAÇO-->
+                        
                         <div class="card" style="width: 18rem;">
                             <img src="https://www.acquazero.com/wp-content/uploads/2020/09/car-panel-7.jpg" class="card-img-top" alt="Revitalização de Plásticos Internos">
                             <div class="card-body d-flex align-content-between flex-wrap">
