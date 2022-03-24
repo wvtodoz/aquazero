@@ -17,7 +17,7 @@
         <header>
             <div class="container header--area">
                 <div class="header--logo">
-                    <a href="/"><img src="https://www.acquazero.com/wp-content/uploads/2022/01/logo-acquazero.png" alt=""></a>                
+                    <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="https://www.acquazero.com/wp-content/uploads/2022/01/logo-acquazero.png" alt=""></a>                
                 </div>                
             </div>            
         </header>
@@ -27,13 +27,13 @@
                     <div class="carousel-item active">
                         <picture>
                             <source media="(max-width: 480px)" srcset="assets/image/img-laricia-mobile.png">
-                            <img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="...">
+                            <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="assets/image/banner-cupom20-laricia.png" class="d-block img-fluid" alt="..."></a>
                         </picture>                        
                     </div>                    
                     <div class="carousel-item">
                         <picture>
                             <source media="(max-width: 480px)" srcset="assets/image/douglas-mobie.jpg">
-                            <img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="...">
+                            <a href="https://api.whatsapp.com/send?phone=55119992119846&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="assets/image/banner-cupom-cristal-free-Douglas-2.png" class="d-block img-fluid" alt="..."></a>
                         </picture>                        
                     </div>
                 </div>
