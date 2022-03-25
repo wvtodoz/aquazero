@@ -4,6 +4,9 @@ body p{
     margin: 0px;
     padding: 0px;
 }
+.col-md-3{
+    width: 21% !important;
+}
 p{    
     color: #54595f;
     font-size: 17px;    
@@ -22,10 +25,7 @@ h2{
 .card-title{
     font-weight: 700px;
 }
-.container{
-    max-width: 1336px !important;
-    margin: auto !important;
-}
+
 .header--area{    
     display: flex;    
     justify-content: center;
@@ -73,11 +73,11 @@ h2{
     width: 100%;
 }
 .cards div{
-    width: 250px;
+    /*width: 250px;*/
     border-radius: 22px;
 }
 .card-info {
-    width: 13vw !important;
+    /*width: 13vw !important;*/
 }
 .btn-primary{
     border: none !important;
@@ -91,16 +91,11 @@ h2{
 }
 .fa-star{
     color: #F0AD4E;
-}
-
-.hm-delivery-van:before{
-    content: \e964;
 } 
- 
 
 @media(max-width: 768px){
-    .cards div{
-        width: 332px !important;
+    .cards div{        
+        width: 306px !important;
     }
     .tabs--area{
         display: none;
@@ -110,8 +105,11 @@ h2{
     }
 }
 @media (max-width: 425px){
-    .cards div{
+    /*.cards div{
         width: 345px !important;
+    }*/
+    .cards div{
+        width: auto !important;
     }
     .tabs--area{
         display: none;
@@ -122,37 +120,31 @@ h2{
     h2{
         font-size: 30px !important;
     }
-    .card-text{
-        width: 70vw;
-        padding-right: 10px;
-    }
+    
     
 }
 @media (max-width: 375px){
     h2{
         font-size: 35px !important;
-    }    
-    .card-text {
-        width: 75vw;
     }
+    .cards div{
+        width: auto !important;
+    }    
+    
     
 }
 @media (max-width: 320px){
     h2{
         font-size: 30px !important;
     }  
-    .row{
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-    .card-text{
-        width: 70vw !important;
-    }
+    
+    
     .tabs--area ul{
         padding-left: 0px;
     }
     .cards div{
-        width: 257px !important;
+        /*width: 257px !important;*/
+        width: auto !important;
     }
     .tabs--area{
         display: none;
@@ -161,9 +153,8 @@ h2{
         font-size: 18px;
     }
     .card-text {
-        width: 75vw;
-    }
-    
+        /*width: 75vw;*/
+    }    
     .slick img{
         width: 100% !important;
     }
