@@ -4,6 +4,28 @@ body p{
     margin: 0px;
     padding: 0px;
 }
+header{
+    background-color: #17174B;        
+}
+.header--area{    
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+    height: 72px;      
+}
+.header--logo img{
+    width: 198px;
+    height: 52px;
+}
+/*.container{
+    max-width: 1140px !important;
+    width: 100% !important;
+    margin: auto;
+}*/
+h2{
+    font-family: 'Dosis', sans-serif !important;
+    color: #273171;
+}
 .col-md-3{
     width: 21% !important;
 }
@@ -15,28 +37,10 @@ p{
     font-size: 20px;
     color: #000;   
 }
-header{
-    background-color: #17174B;        
-}
-h2{
-    font-family: 'Dosis', sans-serif !important;
-    color: #273171;
-}
 .card-title{
     font-weight: 700px;
 }
 
-.header--area{    
-    display: flex;    
-    justify-content: center;
-    align-items: center;    
-    height: 72px;    
-    background-color: #17174B;    
-}
-.header--logo img{
-    width: 198px;
-    height: 52px;
-}
 #tabs{
     background-color: #17174B;    
 }
@@ -45,17 +49,17 @@ h2{
     line-height: 72px;      
 }
 .tabs--area ul{
-    display: flex !important;
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-between;
 }
 .icon{
     height: 54px;
     width: 60px;
     color: #38aae1;
 }
-.slick{       
+/*.slick{       
     margin: 0 auto;
-}
+}*/
 .slick img{
     width: 283px;    
 }
@@ -97,12 +101,29 @@ h2{
     .cards div{        
         width: 306px !important;
     }
+    .card-title{
+        font-size: 17px;
+    }
     .tabs--area{
         display: none;
     }
     .card-text {
-        width: 38vw;
+        width: 36vw;
     }
+    .slick img {
+        width: 215px;
+        padding: 2px;
+    }
+    .slick-dots{
+        width: 93% !important;
+    }
+    button.slick-prev {
+        display: none !important;
+      }
+    button.slick-next {
+    display: none !important;
+    }
+
 }
 @media (max-width: 425px){
     /*.cards div{
@@ -114,34 +135,64 @@ h2{
     .tabs--area{
         display: none;
     }
-    .slick img {
-        width: 393px;
+    .card-title{
+        font-size: 17px;
+    }
+    .card-text {
+        width: 75vw;
+    }  
+    .slick img{
+        width: 100%;       
     }
     h2{
         font-size: 30px !important;
     }
-    
-    
+    button.slick-prev {
+        display: none !important;
+      }
+    button.slick-next {
+    display: none !important;
+    }
+    .slick-dots{
+        width: 95% !important;
+    }    
 }
 @media (max-width: 375px){
     h2{
         font-size: 35px !important;
     }
+    .card-title{
+        font-size: 17px;
+    }
+    .card-text {
+        width: 70vw;
+    }  
     .cards div{
         width: auto !important;
-    }    
+    }
+    .tabs--area{
+        display: none;
+    }
+    .slick img{
+        width: 100%;        
+    }
+    button.slick-prev {
+        display: none !important;
+      }
+    button.slick-next {
+    display: none !important;
+    }
+    .slick-dots{
+        width: 97% !important;
+    }
+        
     
     
 }
 @media (max-width: 320px){
     h2{
         font-size: 30px !important;
-    }  
-    
-    
-    .tabs--area ul{
-        padding-left: 0px;
-    }
+    }   
     .cards div{
         /*width: 257px !important;*/
         width: auto !important;
@@ -150,13 +201,22 @@ h2{
         display: none;
     }
     .card-title{
-        font-size: 18px;
+        font-size: 17px;
     }
     .card-text {
-        /*width: 75vw;*/
+        width: 70vw;
     }    
     .slick img{
-        width: 100% !important;
+        width: 100%;        
+    }
+    button.slick-prev {
+        display: none !important;
+      }
+    button.slick-next {
+    display: none !important;
+    }
+    .slick-dots{
+        width: 96% !important;
     }
 
 }
