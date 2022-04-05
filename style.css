@@ -17,11 +17,6 @@ header{
     width: 198px;
     height: 52px;
 }
-/*.container{
-    max-width: 1140px !important;
-    width: 100% !important;
-    margin: auto;
-}*/
 h2{
     font-family: 'Dosis', sans-serif !important;
     color: #273171;
@@ -57,12 +52,10 @@ p{
     width: 60px;
     color: #38aae1;
 }
-/*.slick{       
-    margin: 0 auto;
-}*/
 .slick img{
     width: 283px;    
 }
+
 .cards img{
     width: 100%;
 }
@@ -72,6 +65,11 @@ p{
 .card img{
     border-top-right-radius: 22px;
     border-top-left-radius: 22px;
+}
+.sr{
+    /*max-width: 1210px !important;*/
+    width: 100%;
+    margin: auto;    
 }
 .banner img{
     width: 100%;
@@ -96,6 +94,65 @@ p{
 .fa-star{
     color: #F0AD4E;
 } 
+.col-md-4{
+    width: 29.333333% !important;
+}
+/*COMPARISON*/
+
+.img-comp-container {
+    position: relative;
+    height: 300px; /*should be the same height as the images*/
+                           
+    /*border: 3px solid #aaa;*/
+    border-radius: 20px !important;
+                      
+} 
+.rounded-18{
+    border-radius: 18px;
+}   
+.bg-white-2{
+    background: rgba(255,255,255,.2);
+}  
+.opacity-0{
+    opacity: 0;
+}                                          
+    .img-comp-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;                                                
+}                        
+
+    .img-comp-img img {
+    display: block;    
+    vertical-align: middle;
+    
+    
+    height: 300px;
+}
+.img-comp-slider::after{
+    content: "\F22D";
+}                       
+    .img-comp-slider {
+    position: absolute;    
+    z-index: 9;
+    cursor: move;
+    content: "\F22D";
+    color: #000;     
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #fff;                        
+    border-radius: 50%;
+}
+    .bor{
+    border-right: 2px solid #fff !important;                           
+}
+    .img-comp-overlay:hover{
+    opacity: 1 !important;
+    background-color: #000 !important;
+}
 
 @media(max-width: 768px){
     .cards div{        
@@ -123,6 +180,8 @@ p{
     button.slick-next {
     display: none !important;
     }
+    
+    
 
 }
 @media (max-width: 425px){
@@ -185,6 +244,9 @@ p{
     .slick-dots{
         width: 97% !important;
     }
+    .img-comp-img img{
+        width: 340px !important;
+    }
         
     
     
@@ -217,6 +279,9 @@ p{
     }
     .slick-dots{
         width: 96% !important;
+    }
+    .img-comp-img img{
+        width: 298px !important;
     }
 
 }

@@ -1,6 +1,13 @@
 <!DOCTYPE html>
     <html lang="pt-br">
     <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M6WKLV4');</script>
+        <!-- End Google Tag Manager -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +17,100 @@
         <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
         <!-- Add the new slick-theme.css if you want the default styling-->
         <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>     
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function initComparisons() {
+                var x, i;
+                /* Find all elements with an "overlay" class: */
+                x = document.getElementsByClassName("img-comp-overlay");
+                for (i = 0; i < x.length; i++) {
+                /* Once for each "overlay" element:
+                pass the "overlay" element as a parameter when executing the compareImages function: */
+                compareImages(x[i]);
+            }
+            function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                /* Get the width and height of the img element */
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                /* Set the width of the img element to 50%: */
+                img.style.width = (w / 2) + "px";
+                /* Create slider: */
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                /* Insert slider */
+                img.parentElement.insertBefore(slider, img);
+                /* Position the slider in the middle: */
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                /* Execute a function when the mouse button is pressed: */
+                slider.addEventListener("mousedown", slideReady);
+                /* And another function when the mouse button is released: */
+                window.addEventListener("mouseup", slideFinish);
+                /* Or touched (for touch screens: */
+                slider.addEventListener("touchstart", slideReady);
+                /* And released (for touch screens: */
+                window.addEventListener("touchend", slideFinish);
+                function slideReady(e) {
+                    /* Prevent any other actions that may occur when moving over the image: */
+                    e.preventDefault();
+                    /* The slider is now clicked and ready to move: */
+                    clicked = 1;
+                    /* Execute a function when the slider is moved: */
+                    window.addEventListener("mousemove", slideMove);
+                    window.addEventListener("touchmove", slideMove);
+                }
+                    function slideFinish() {
+                    /* The slider is no longer clicked: */
+                    clicked = 0;
+                }
+                function slideMove(e) {
+                    var pos;
+                    /* If the slider is no longer clicked, exit this function: */
+                    if (clicked == 0) return false;
+                    /* Get the cursor's x position: */
+                    pos = getCursorPos(e)
+                    /* Prevent the slider from being positioned outside the image: */
+                    if (pos < 0) pos = 0;
+                    if (pos > w) pos = w;
+                    /* Execute a function that will resize the overlay image according to the cursor: */
+                    slide(pos);
+                }
+                function getCursorPos(e) {
+                    var a, x = 0;
+                    e = (e.changedTouches) ? e.changedTouches[0] : e;
+                    /* Get the x positions of the image: */
+                    a = img.getBoundingClientRect();
+                    /* Calculate the cursor's x coordinate, relative to the image: */
+                    x = e.pageX - a.left;
+                    /* Consider any page scrolling: */
+                    x = x - window.pageXOffset;
+                    return x;
+                }
+                function slide(x) {
+                    /* Resize the image: */
+                    img.style.width = x + "px";
+                    /* Position the slider: */
+                    slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+            }
+        }
+
+        </script>
+
         
+
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6WKLV4"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <header>
             <div class="container header--area">
                 <div class="header--logo">
-                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20um%20serviço."><img src="https://www.acquazero.com/wp-content/uploads/2022/01/logo-acquazero.png" alt=""></a>                
+                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20um%20serviço." class="eventgtag"><img src="https://www.acquazero.com/wp-content/uploads/2022/01/logo-acquazero.png" alt=""></a>                
                 </div>                
             </div>            
         </header>
@@ -93,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section id="oferta--mes">
+        <section id="sa">
             <div class="container oferta--area">
                 <div class="row d-flex justify-content-center pt-5">
                     <h2 class="d-flex justify-content-center pb-5">Serviços <strong>&nbsp;Automotivos</strong></h2>
@@ -110,14 +203,13 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    
+                                        <i class="fa fa-star"></i>                                    
                                     </div>
                                     <p class="card-text">A limpeza ecológica da Acquazero com o composto de cera não prejudica a pintura, protegida contra males do tempo e é biodegradável.</p>                                    
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$70,00</strong></p>                                    
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza Ecológica" data-value="70.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                                
                             </div>
                         </div>
@@ -138,7 +230,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$110,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Enceramento%20Wax." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Enceramento%20Wax." class="btn btn-primary eventgtag" data-title="Eceramento Wax" data-value="110.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +251,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$30,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20plásticos." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20plásticos." class="btn btn-primary eventgtag" data-title="Revitalização de plásticos" data-value="30.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                               
                             </div>
                         </div>
@@ -180,7 +272,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$500,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Pintura" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Pintura" class="btn btn-primary eventgtag" data-title="Polimento de Pintura" data-value="500.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div> 
                             </div>
                         </div>
@@ -202,7 +294,7 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$40,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Hidratação%20de%20Couro" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Hidratação%20de%20Couro" class="btn btn-primary eventgtag" data-title="Hidratação de Couro" data-value="40.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                              
                             </div>
                         </div>
@@ -223,7 +315,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$200,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Impermeabilização%20dos%20Tecidos" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Impermeabilização%20dos%20Tecidos" class="btn btn-primary eventgtag" data-title="Impermeabilização dos Tecidos" data-value="200.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
@@ -243,7 +335,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$200,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Oxi-sanitização" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Oxi-sanitização" class="btn btn-primary eventgtag" data-title="Oxi-sanitização" data-value="200.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
@@ -263,7 +355,7 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$80,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Porta%20Malas" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Porta%20Malas" class="btn btn-primary eventgtag" data-title="Higienização do Porta Malas" data-value="80.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>                        
@@ -293,7 +385,7 @@
                                 </div><br> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$180,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Cadeirão" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20do%20Cadeirão" class="btn btn-primary eventgtag" data-title="Higienização do Cadeirão" data-value="350.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +406,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$350,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Cristalização%20de%20Pintura" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Cristalização%20de%20Pintura" class="btn btn-primary eventgtag" data-title="Cristalização de Pintura" data-value="350.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
@@ -335,7 +427,7 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$250,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Espelhamento%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Espelhamento%20de%20Pintura." class="btn btn-primary eventgtag" data-title="Espelhamento de Pintura" data-value="250.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
@@ -349,14 +441,13 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    
+                                        <i class="fa fa-star"></i>                                    
                                     </div>
                                     <p class="card-text">Serviço exclusivo da Acquazero. Ele cria proteção contra o desgaste da pintura pelo tempo ou ocasionada por pequenos acidentes, como batidas e leves esbarrões.</p>                                    
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$1000,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Pintura." class="btn btn-primary eventgtag" data-title="Vitrificação de Pintura" data-value="1000.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                       
                             </div>
                         </div>
@@ -378,7 +469,7 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$60,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20Plásticos%20Internos." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Revitalização%20de%20Plásticos%20Internos." class="btn btn-primary eventgtag" data-title="Revitalização de plásticos internos" data-value="60.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
@@ -399,7 +490,7 @@
                                 </div> 
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$150,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Vidros." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Vitrificação%20de%20Vidros." class="btn btn-primary eventgtag" data-title="Vitrificação de vidros" data-value="150.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                            
                             </div>
                         </div>
@@ -420,7 +511,7 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$250,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Descontaminação%20de%20Pintura." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Descontaminação%20de%20Pintura." class="btn btn-primary eventgtag" data-title="Descontaminação de pintura" data-value="250.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                           
                             </div>
                         </div>
@@ -441,7 +532,7 @@
                                 </div><br>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$50,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Faróis" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Polimento%20de%20Faróis" class="btn btn-primary eventgtag" data-title="Polimento de Faróis" data-value="50.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                        
                             </div>
                         </div>                        
@@ -472,7 +563,7 @@
                                 </div>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$100,00</strong></p>
-                                    <a href=https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Técnica%20de%20Motor." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href=https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Técnica%20de%20Motor." class="btn btn-primary eventgtag" data-title="Limpeza Técnica de motor" data-value="100.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                             
                             </div>
                         </div>
@@ -493,7 +584,7 @@
                                 </div><br>  
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$400,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20Interna." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20Interna." class="btn btn-primary eventgtag" data-title="Higienização Interna" data-value="400.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>
@@ -514,7 +605,7 @@
                                 </div>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$80,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20de%20Ar%20Condicionado" class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Higienização%20de%20Ar%20Condicionado" class="btn btn-primary eventgtag" data-title="Higienização de ar condicionado" data-value="80.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>                              
                             </div>
                         </div>
@@ -534,7 +625,7 @@
                                 </div><br>
                                 <div class="preco_botao d-flex flex-column align-items-start mt-3">
                                     <p class="preco">A partir de <strong>&nbsp;R$30,00</strong></p>
-                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Remoção%20de%20Chuva%20Ácida." class="btn btn-primary">Agendar Serviço</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Remoção%20de%20Chuva%20Ácida." class="btn btn-primary eventgtag" data-title="Remoção de chuva ácida" data-value="30.00" data-category="Serviços Automotivos">Agendar Serviço</a>
                                 </div>
                             </div>
                         </div>                                               
@@ -542,14 +633,232 @@
                 </div>
             </div>
         </section>
+        <section id="sr">
+            <div class="container">
+                <div class="row d-flex justify-content-center pt-5">
+                    <h2 class="d-flex justify-content-center pb-5">Serviços <strong>&nbsp;Residenciais</strong></h2>
+                </div>
+                <div class="row">
+                    <div class="cards d-flex flex-wrap justify-content-around sr">
+                        <div class="card col-md-4">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-05-at-11.09.39-1024x678.jpeg" class="card-img-top" alt="Limpeza e Higienização de Sofá">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Limpeza e Higienização de Sofá</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">A higienização da Acquazero tem uma ação mais profunda e é eficaz na eliminação de fungos, bactérias, ácaros dentre outros micro-organismos que afetam a saúde.</p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$160,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza e Higienização de Sofá" data-value="160.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-05-at-11.09.34-1.jpeg" class="card-img-top" alt="Limpeza Ecológica">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Impermeabilização de Sofá</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">A impermeabilização Acquazero é um processo que fecha as tramas do tecido dificultando a infiltração de líquidos, e por isso conserva os efeitos da higienização.</p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$210,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Impermeabilização de Sofá" data-value="210.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/poltrona.jpg" class="card-img-top" alt="Limpeza Ecológica">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Limpeza e Higienização de Poltrona</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">Deixe suas poltronas como novas! A limpeza da Acquazero expressa cuidado, remove todos os microrganismos causadores dessas doenças, como fungos, bactérias e ácaros.</p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$125,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza e Higienização de Poltrona" data-value="125.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <img src="https://www.acquazero.com/wp-content/uploads/2021/12/banner-regua-residencial-768x81.jpg" class="d-none d-md-block">
+                        <img src="https://www.acquazero.com/wp-content/uploads/2021/12/banner-regua-2-mobile.jpg" class="d-block d-md-none" alt="">
+                    </div>
+                    <div class="cards d-flex flex-wrap justify-content-around sr">
+                        <div class="card col-md-4">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/06/como-tirar-mofo-de-cadeira-de-tecido-2.jpg" class="card-img-top" alt="Limpeza e Higienização de Sofá">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Limpeza e Higienização de Cadeira</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">A limpeza e higienização Acquazero remove manchas e sujeira profunda, trazendo sua beleza original e prolongando a durabilidade do seu estofado. Conte conosco para cuidar de tudo para você.</p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$170,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza e Higienização de Cadeira" data-value="170.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/colchao.jpg" class="card-img-top" alt="Limpeza Ecológica">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Limpeza e Higienização de Colchão</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">A limpeza do colchão Acquazero maior durabilidade, evita a proliferação dos ácaros e, consequentemente, as crises alérgicas e respiratórias, o que contribui para uma boa noite de sono e sem espirros.</p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$60,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza e Higienização de Colchão" data-value="60.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="card col-md-4 px-0">
+                            <img src="https://www.acquazero.com/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-05-at-11.09.39-2.jpeg" class="card-img-top" alt="Limpeza Ecológica">
+                            <div class="card-body d-flex align-content-between flex-wrap">
+                                <div class="card-info">                                    
+                                    <h5 class="card-title">Limpeza e Higienização de Tapetes</h5>
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>                                    
+                                    </div>
+                                    <p class="card-text">A limpeza Acquazero garante uma maior durabilidade e beleza para os tapetes, remove os microrganismos causadores dessas doenças, como fungos, bactérias e ácaros, trazendo equilíbrio do ambiente. </p>                                    
+                                </div>
+                                <div class="preco_botao d-flex flex-column align-items-start mt-3">
+                                    <p class="preco">A partir de <strong>&nbsp;R$22,00</strong></p>                                    
+                                    <a href="https://api.whatsapp.com/send?phone=5511999211984&text=Olá%20gostaria%20de%20agendar%20o%20serviço%20Limpeza%20Ecológica" class="btn btn-primary eventgtag" data-title="Limpeza e Higienização de Tapetes" data-value="22.00" data-category="Serviços Residenciais">Agendar Serviço</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="d-flex flex-wrap justify-content-between mb-5 pt-5">                    
+                        <div class="img-comp-container col-sm-3 mb-3 me-5 rounded-18 overflow-hidden">             
+                            
+                            <div class="img-comp-img">                                                                
+                                <img src="https://www.acquazero.com/wp-content/uploads/2021/12/sofa-limpo.jpg">                                
+                            </div>                                                       
+                            <div class="img-comp-img img-comp-overlay bor">
+                                <img src="https://www.acquazero.com/wp-content/uploads/2021/12/sofa-sujo.jpg">                                
+                            </div>
+                            <div class="d-flex justify-content-between w-100 position-absolute bottom-0 p-4 opacity-0 labels">
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Antes
+                                </div>
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Depois
+                                </div>                                                                
+                            </div>
+                            <span class="cd-handle"></span>
+                        </div>
+
+                        <div class="img-comp-container col-sm-3 mb-3 me-5 rounded-18 overflow-hidden">
+                            <div class="img-comp-img">
+                                <img id="image" src="https://www.acquazero.com/wp-content/uploads/2021/12/banco-carro-limpo.jpg">                                                          
+                            </div>                            
+                            <div class="img-comp-img img-comp-overlay bor">
+                                <img id="image" src="https://www.acquazero.com/wp-content/uploads/2021/12/banco-carro-sujo.jpg">                                
+                            </div>                            
+                            <div class="d-flex justify-content-between w-100 position-absolute bottom-0 p-4 opacity-0 labels">
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Antes
+                                </div>
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Depois
+                                </div>                                                                
+                            </div>                                  
+                        </div>
+                        <div class="img-comp-container col-sm-3 mb-3 me-5 rounded-18 overflow-hidden">
+                            <div class="img-comp-img">
+                                <img id="image" src="https://www.acquazero.com/wp-content/uploads/2021/12/tapete-limpo.jpg">
+                                <span class="glyphicon glyphicon-triangle-left"></span>                                
+                            </div>
+                            <div class="img-comp-img img-comp-overlay bor">                                
+                                <img id="image" src="https://www.acquazero.com/wp-content/uploads/2021/12/tapete-sujo.jpg">                                
+                            </div>
+                            <div class="d-flex justify-content-between w-100 position-absolute bottom-0 p-4 opacity-0 labels">
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Antes
+                                </div>
+                                <div class="text-white px-3 py-2 bg-white-2">
+                                    Depois
+                                </div>                                                                
+                            </div>
+                        </div>
+                    </div>    
+                </div>                               
+            </div>                       
+        </section>
+
        
         
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="assets/slick/slick.min.js"></script>
         <script src="assets/bootstraps/js/bootstrap.min.js"> </script>
-
-        
-        
+        <script>
+            $('.eventgtag').on('click', function(){
+                var tid = Math.random()*1001;
+                var elm = $(this)
+                gtag("event", "purchase", {
+                    transaction_id: "T_"+tid, 
+                    value: elm.data('value'),
+                    currency: "BRL",
+                    items: [
+                        {
+                            item_name: elm.data('title'),
+                            currency: "BRL",
+                            item_brand: "Acquazero",
+                            item_category: elm.data('category'),
+                            price: elm.data('value'),
+                        }
+                    ]
+                })
+            });
+            $(document).ready(function(){
+                initComparisons();
+            })      
+            $('.img-comp-container').on('mouseenter', function () {
+                $(this).find('.labels').stop().animate({opacity: 2})
+            }).on('mouseleave', function(){
+                $(this).find('.labels').stop().animate({opacity: 0})
+            })           
+        </script>        
     </body>
 </html>
