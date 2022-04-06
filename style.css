@@ -132,13 +132,20 @@ p{
     height: 300px;
 }
 .img-comp-slider::after{
-    content: "\F22D";
+    display: block;
+    content: '';
+    background-image: url(assets/image/left-and-right-arrows-svgrepo-com.svg);
+    height: 39px;
+    width: 38px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }                       
     .img-comp-slider {
     position: absolute;    
     z-index: 9;
     cursor: move;
-    content: "\F22D";
+    
     color: #000;     
     /*set the appearance of the slider:*/
     width: 40px;
