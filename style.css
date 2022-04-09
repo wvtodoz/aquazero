@@ -146,6 +146,42 @@ p{
     opacity: 1 !important;
     background-color: #000 !important;
 }
+.store_app img{
+    width: 40%;
+}
+.tab_foot{
+    background-color: #F80032;
+    height: 72px;
+    line-height: 72px;
+}
+.store_app{
+
+}
+.social-media ul{
+    list-style: none;
+}
+
+#foot{
+    background-image: url('assets/image/footer.png');
+    background-size: cover;
+    background-position: center center;         
+    background-repeat: no-repeat;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */                    
+}
+.social-media ul li{
+    border: 1px solid #38AAE1;
+    border-radius: 28px;
+    padding: 12px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.social-media ul li:hover{
+    background-color: #183064;       
+}
+.width{
+    width: 44%;
+}
 
 @media(max-width: 768px){
     .cards div{        
@@ -175,6 +211,19 @@ p{
     }
     .img-comp-container{
         width: 48% !important;
+    }
+    .logo-foot{
+        padding: 0px;
+        width: 100%;
+    }
+    .logo-foot img{
+        width: 175px;
+    }
+    .foot-int h2{
+        font-size: 17px;
+    }
+    #foot h2{
+        font-size: 24px;
     }
 }
 @media (max-width: 425px){    
@@ -207,6 +256,13 @@ p{
     }
     .img-comp-container{
         width: 100% !important;
+    }
+    .tab_foot{
+        background-color: #F80032;
+        height: 200px;        
+        padding: 10px;
+        text-align: center;
+}
     }    
 }
 @media (max-width: 375px){
@@ -284,5 +340,15 @@ p{
     }
     .img-comp-container{
         width: 100% !important;
+    }
+    .tab_foot{
+        background-color: #F80032;
+        height: 245px;
+        padding: 10px;
+        text-align: center;
+    }
+    .logo-foot img{
+        padding: 33px;
+        width: 100%;
     }
 }
