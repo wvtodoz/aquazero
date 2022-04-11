@@ -149,17 +149,10 @@ p{
 .store_app img{
     width: 40%;
 }
-.tab_foot{
-    background-color: #F80032;
-    height: 72px;
-    line-height: 72px;
-}
 .store_app{
 
 }
-.social-media ul{
-    list-style: none;
-}
+
 
 #foot{
     background-image: url('assets/image/footer.png');
@@ -168,19 +161,31 @@ p{
     background-repeat: no-repeat;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */                    
 }
-.social-media ul li{
-    border: 1px solid #38AAE1;
-    border-radius: 28px;
-    padding: 12px;
+.social_media ul{
+    list-style: none;
+}
+.social_media i{
+    
+    font-size: 30px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 25px;
     background-color: #fff;
+    padding: 10px;
     cursor: pointer;
 }
 
-.social-media ul li:hover{
-    background-color: #183064;       
+.social_media i:hover{
+    background-color: #274788;       
+    /*background-color: #2c4479;*/
 }
 .width{
     width: 44%;
+}
+#tab_foot{
+    background-color: #f80032;
+}
+.foot-int{
+    height: 72px;
 }
 
 @media(max-width: 768px){
@@ -213,14 +218,10 @@ p{
         width: 48% !important;
     }
     .logo-foot{
-        padding: 0px;
-        width: 100%;
-    }
-    .logo-foot img{
-        width: 175px;
-    }
+        padding: 0px;        
+    }    
     .foot-int h2{
-        font-size: 17px;
+        font-size: 35px;
     }
     #foot h2{
         font-size: 24px;
@@ -257,13 +258,14 @@ p{
     .img-comp-container{
         width: 100% !important;
     }
-    .tab_foot{
-        background-color: #F80032;
-        height: 200px;        
-        padding: 10px;
+    .logo-foot{
+        display: flex;
+        justify-content: center;
+    }
+    .foot-int h2   {
+        font-size: 25px !important;
         text-align: center;
-}
-    }    
+    }       
 }
 @media (max-width: 375px){
     h2{
@@ -304,7 +306,15 @@ p{
     }
     .me-3{
         margin-right: 1rem !important;
-    }   
+    }
+    .logo-foot{
+        display: flex;
+        justify-content: center;
+    }
+    .foot-int h2   {
+        font-size: 25px !important;
+        text-align: center;
+    }
 }
 @media (max-width: 320px){
     h2{
@@ -341,14 +351,13 @@ p{
     .img-comp-container{
         width: 100% !important;
     }
-    .tab_foot{
-        background-color: #F80032;
-        height: 245px;
-        padding: 10px;
+    .foot-int h2{
+        font-size: 21px !important;
         text-align: center;
+        font-weight: 700;        
     }
     .logo-foot img{
         padding: 33px;
         width: 100%;
-    }
+    }    
 }
